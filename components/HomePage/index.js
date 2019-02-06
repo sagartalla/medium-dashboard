@@ -11,7 +11,7 @@ const HomePage = ({articles}) => {
     <div>
       <Topics />
       {
-        articles.map((article) => <Article {...article} />)
+        articles.map((article) => <Article key={article.name} {...article} />)
       }
     </div>
   );
